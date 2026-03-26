@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://usekestrel.ai/schemas/kestrel/incident.json",
+  "title": "Kestrel Incident",
+  "description": "Represents a cloud or Kubernetes infrastructure incident detected, investigated, and remediated by the Kestrel AI platform.",
+  "type": "object",
+  "required": ["incidentId", "name", "severity", "status"],
+  "properties": {
+    "incidentId": {
+      "type": "string",
+      "description": "Unique identifier for the incident.",
+      "pattern": "^inc_.+"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable summary of the incident.",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the incident including symptoms and impact."
+    },
+    "severity": {
+      "type": "string",
+      "description": "Severity level of the incident.",
+      "enum": ["critical", "high", "medium", "low", "info"]
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the incident in the response lifecycle.",
+      "enum": ["detected", "investigating", "remediating", "resolved", "closed"]
+    },
+    "cluster": {
+      "$ref": "#/$defs/ClusterRef",
+      "description": "The Kubernetes cluster where the incident was detected."
+    },
+    "namespace": {
+      "type": "string",
+      "description": "Kubernetes namespace where the incident occurred."
+    },
+    "rootCause": {
+      "type": "string",
+      "description": "AI-determined root cause analysis of the incident."
+    },
+    "affectedResources": {
+      "type": "array",
+      "description": "Kubernetes resources affected by this incident.",
+      "items": {
+        "$ref": "#/$defs/AffectedResource"
+      }
+    },
+    "remediation": {
+      "$ref": "#/$defs/Remediation",
+      "description": "Details of the automated remediation applied."
+    },
+    "detectedAt": {
+      "type": "string",
+      "description": "Timestamp when the incident was first detected.",
+      "format": "date-time"
+    },
+    "resolvedAt": {
+      "type": "string",
+      "description": "Timestamp when the incident was resolved.",
+      "format": "date-time"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Categorization tags for the incident.",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "ClusterRef": {
+      "type": "object",
+      "description": "Reference to a Kubernetes cluster monitored by Kestrel.",
+      "properties": {
+        "clusterId": {
+          "type": "string",
+          "description": "Unique identifier for the cluster."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the Kubernetes cluster."
+        },
+        "provider": {
+          "type": "string",
+          "description": "Cloud provider hosting the cluster.",
+          "enum": ["aws", "gcp", "azure", "on-premise", "other"]
+        }
+      },
+      "required": ["clusterId", "name"]
+    },
+    "AffectedResource": {
+      "type": "object",
+      "description": "A Kubernetes resource affected by an incident.",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "description": "Kubernetes resource kind (e.g., Pod, Deployment, Service)."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the Kubernetes resource."
+        },
+        "namespace": {
+          "type": "string",
+          "description": "Namespace of the resource."
+        }
+      },
+      "required": ["kind", "name"]
+    },
+    "Remediation": {
+      "type": "object",
+      "description": "Automated remediation details produced by Kestrel AI agents.",
+      "properties": {
+        "remediationId": {
+          "type": "string",
+          "description": "Unique identifier for the remediation action.",
+          "pattern": "^rem_.+"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the remediation action taken."
+        },
+        "pullRequestUrl": {
+          "type": "string",
+          "description": "URL of the pull request containing the fix.",
+          "format": "uri"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the remediation.",
+          "enum": ["proposed", "approved", "applied", "reverted", "failed"]
+        },
+        "appliedAt": {
+          "type": "string",
+          "description": "Timestamp when the remediation was applied.",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

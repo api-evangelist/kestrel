@@ -65,6 +65,8 @@ The Kestrel Kubernetes Operator is an open-source Go-based operator that connect
 - [Status](https://status.usekestrel.ai/)
 - [Changelog](https://usekestrel.ai/changelog)
 - [Security](https://trust.delve.co/kestrel-ai)
+- [JSON-LD](json-ld/kestrel-context.jsonld)
+- [JSONSchema](json-schema/kestrel-incident-schema.json)
 
 ## Maintainers
 

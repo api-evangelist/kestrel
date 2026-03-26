@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "kestrel": "https://usekestrel.ai/ns/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+
+    "Incident": {
+      "@id": "kestrel:Incident",
+      "@context": {
+        "incidentId": "kestrel:incidentId",
+        "name": "schema:name",
+        "description": "schema:description",
+        "severity": "kestrel:severity",
+        "status": "kestrel:incidentStatus",
+        "cluster": "kestrel:cluster",
+        "namespace": "kestrel:namespace",
+        "rootCause": "kestrel:rootCause",
+        "detectedAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        },
+        "resolvedAt": {
+          "@id": "kestrel:resolvedAt",
+          "@type": "xsd:dateTime"
+        },
+        "tags": {
+          "@id": "schema:keywords",
+          "@container": "@set"
+        }
+      }
+    },
+
+    "Remediation": {
+      "@id": "kestrel:Remediation",
+      "@context": {
+        "remediationId": "kestrel:remediationId",
+        "incidentId": "kestrel:incidentId",
+        "description": "schema:description",
+        "pullRequestUrl": {
+          "@id": "kestrel:pullRequestUrl",
+          "@type": "@id"
+        },
+        "status": "kestrel:remediationStatus",
+        "appliedAt": {
+          "@id": "kestrel:appliedAt",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Cluster": {
+      "@id": "kestrel:Cluster",
+      "@context": {
+        "clusterId": "kestrel:clusterId",
+        "name": "schema:name",
+        "provider": "kestrel:cloudProvider",
+        "region": "kestrel:region",
+        "kubernetesVersion": "kestrel:kubernetesVersion",
+        "operatorVersion": "kestrel:operatorVersion",
+        "status": "kestrel:clusterStatus",
+        "connectedAt": {
+          "@id": "kestrel:connectedAt",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Agent": {
+      "@id": "kestrel:Agent",
+      "@context": {
+        "agentId": "kestrel:agentId",
+        "name": "schema:name",
+        "description": "schema:description",
+        "agentType": "kestrel:agentType",
+        "capabilities": {
+          "@id": "kestrel:capabilities",
+          "@container": "@set"
+        },
+        "status": "kestrel:agentStatus"
+      }
+    },
+
+    "Integration": {
+      "@id": "kestrel:Integration",
+      "@context": {
+        "integrationId": "kestrel:integrationId",
+        "name": "schema:name",
+        "integrationType": "kestrel:integrationType",
+        "status": "kestrel:integrationStatus",
+        "configuredAt": {
+          "@id": "kestrel:configuredAt",
+          "@type": "xsd:dateTime"
+        }
+      }
+    }
+  }
+}
