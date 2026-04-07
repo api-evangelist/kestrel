@@ -5,10 +5,10 @@ apis:
   - aid: kestrel:platform
     name: Kestrel Platform
     tags:
-      - Incident Response
-      - Kubernetes
       - AI Agents
       - Cloud Security
+      - Incident Response
+      - Kubernetes
     humanURL: https://docs.usekestrel.ai/
     properties:
       - url: https://docs.usekestrel.ai/
@@ -28,10 +28,10 @@ apis:
   - aid: kestrel:kubernetes-operator
     name: Kestrel Kubernetes Operator
     tags:
-      - Kubernetes
-      - Operators
       - gRPC
       - Helm
+      - Kubernetes
+      - Operators
     humanURL: https://docs.usekestrel.ai/kubernetes/configuration
     properties:
       - url: https://docs.usekestrel.ai/kubernetes/configuration
@@ -48,10 +48,10 @@ apis:
       It is deployed via Helm chart from the GitHub Container Registry.
 name: Kestrel
 tags:
-  - Incident Response
-  - Kubernetes
   - AI Agents
   - Cloud Security
+  - Incident Response
+  - Kubernetes
   - Observability
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
