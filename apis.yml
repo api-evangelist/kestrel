@@ -117,14 +117,12 @@ segments:
   - Kubernetes
   - Cloud Security
 description: >-
-  Kestrel AI is a YC-backed startup building an AI-native cloud incident
-  response platform. Founded by former Illumio Kubernetes Security engineers,
-  Kestrel uses autonomous AI agents to detect, investigate, and remediate
-  infrastructure incidents across Kubernetes and cloud environments. The
-  platform provides continuous monitoring, root cause analysis, and automated
-  remediation through GitOps workflows, integrating with Slack, PagerDuty,
-  GitHub, GitLab, AWS, and major observability platforms. Kestrel supports
-  both cloud-hosted and fully self-hosted on-premise deployments.
+  Kestrel AI is a YC-backed startup building an AI-native cloud incident response
+  platform. Founded by former Illumio Kubernetes Security engineers, Kestrel uses
+  autonomous AI agents to detect, investigate, and remediate infrastructure incidents
+  across Kubernetes and cloud environments. The platform provides continuous monitoring,
+  root cause analysis, and automated remediation through GitOps workflows, integrating
+  with Slack, PagerDuty, GitHub, GitLab, AWS, and major observability platforms.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
