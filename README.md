@@ -5,8 +5,8 @@ Kestrel AI is a YC-backed company building an AI-native cloud incident response 
 
 ## Scope
 
-- **Type:** Contract
-- **Position:** Consuming
+- **Type:** Index
+- **Position:** Consumer
 - **Access:** 3rd-Party
 
 ## Tags:
@@ -16,7 +16,7 @@ Kestrel AI is a YC-backed company building an AI-native cloud incident response 
 ## Timestamps
 
 - **Created:** 2026-03-26
-- **Modified:** 2026-03-26
+- **Modified:** 2026-04-28
 
 ## APIs
 
@@ -70,6 +70,6 @@ The Kestrel Kubernetes Operator is an open-source Go-based operator that connect
 
 ## Maintainers
 
-**FN:** API Evangelist
+**FN:** Kin Lane
 
-**Email:** info@apievangelist.com
+**Email:** kin@apievangelist.com
