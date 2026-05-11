@@ -74,19 +74,19 @@ common:
     type: GitHubOrganization
     description: 'null'
   - url: https://docs.usekestrel.ai/integrations/slack
-    name: Kestrel Slack Integration
+    name: Slack
     type: Integration
     description: 'null'
   - url: https://docs.usekestrel.ai/integrations/pagerduty
-    name: Kestrel PagerDuty Integration
+    name: PagerDuty
     type: Integration
     description: 'null'
   - url: https://docs.usekestrel.ai/integrations/cicd
-    name: Kestrel CI/CD Integration
+    name: CI/CD Pipeline Integration
     type: Integration
     description: 'null'
   - url: https://docs.usekestrel.ai/cloud/aws
-    name: Kestrel AWS Integration
+    name: AWS
     type: Integration
     description: 'null'
   - url: https://docs.usekestrel.ai/on-premise/setup
