@@ -109,6 +109,8 @@ common:
     type: JSONLD
   - url: json-schema/kestrel-incident-schema.json
     type: JSONSchema
+  - type: LLMsTxt
+    url: https://docs.usekestrel.ai/llms.txt
 created: '2026-03-26'
 modified: '2026-04-28'
 position: Consumer
