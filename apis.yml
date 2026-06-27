@@ -16,7 +16,7 @@ apis:
       - url: https://docs.usekestrel.ai/quickstart
         type: GettingStarted
       - url: https://platform.usekestrel.ai/register
-        type: SignUp
+        type: Signup
     description: >-
       Kestrel AI provides an AI-native cloud incident response platform that
       uses autonomous agents to detect, investigate, and remediate Kubernetes
@@ -67,7 +67,7 @@ common:
     description: 'null'
   - url: https://platform.usekestrel.ai/register
     name: Kestrel Sign Up
-    type: SignUp
+    type: Signup
     description: 'null'
   - url: https://github.com/kestrelai
     name: Kestrel GitHub
@@ -75,19 +75,19 @@ common:
     description: 'null'
   - url: https://docs.usekestrel.ai/integrations/slack
     name: Slack
-    type: Integration
+    type: Integrations
     description: 'null'
   - url: https://docs.usekestrel.ai/integrations/pagerduty
     name: PagerDuty
-    type: Integration
+    type: Integrations
     description: 'null'
   - url: https://docs.usekestrel.ai/integrations/cicd
     name: CI/CD Pipeline Integration
-    type: Integration
+    type: Integrations
     description: 'null'
   - url: https://docs.usekestrel.ai/cloud/aws
     name: AWS
-    type: Integration
+    type: Integrations
     description: 'null'
   - url: https://docs.usekestrel.ai/on-premise/setup
     name: Kestrel On-Premise Setup
@@ -109,7 +109,7 @@ common:
     type: JSONLD
   - url: json-schema/kestrel-incident-schema.json
     type: JSONSchema
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.usekestrel.ai/llms.txt
 created: '2026-03-26'
 modified: '2026-04-28'
