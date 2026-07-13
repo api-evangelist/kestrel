@@ -1,0 +1,21 @@
+{
+  "repo": "kestrel",
+  "feeds": [
+    {
+      "source": "https://usekestrel.ai/blog",
+      "feed_url": "https://usekestrel.ai/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://docs.usekestrel.ai/llms.txt",
+      "feed_url": "https://docs.usekestrel.ai/llms.txt",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 9
+}
