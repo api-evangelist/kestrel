@@ -1,0 +1,77 @@
+# Kestrel AI
+
+## Docs
+
+- [Introduction](https://docs.usekestrel.ai/introduction.md): Kestrel documentation - AI Agents for Platform Engineering
+- [Workflows Quickstart](https://docs.usekestrel.ai/quickstart/workflows.md): Build your first workflow automation in seconds
+- [Incident Response Quickstart](https://docs.usekestrel.ai/quickstart/incident-response.md): Set up AI-powered incident detection and response
+- [Cloud AI Copilot Quickstart](https://docs.usekestrel.ai/quickstart/copilot.md): Ask questions about your infrastructure in plain English
+- [Create Workflows](https://docs.usekestrel.ai/workflows/create-workflows.md): Build automated workflows using natural language, drag-and-drop, CLI, SDK, or MCP
+- [Custom Integrations](https://docs.usekestrel.ai/workflows/custom-integrations.md): Create custom HTTP action blocks and webhook trigger blocks
+- [Workflow Integrations Setup](https://docs.usekestrel.ai/workflows/setup-integrations.md): Connect the integrations your workflows need
+- [Workflow Observability](https://docs.usekestrel.ai/workflows/observability.md): Monitor workflow execution metrics, performance, and health
+- [CLI](https://docs.usekestrel.ai/workflows/cli.md): Create, manage, and trigger workflows from the command line
+- [Python SDK](https://docs.usekestrel.ai/workflows/sdk.md): Programmatically create, manage, and monitor workflows with the Kestrel Python SDK
+- [MCP](https://docs.usekestrel.ai/workflows/mcp.md): Manage Kestrel workflows through the Model Context Protocol for AI agent integration
+- [Kubernetes Incident Response](https://docs.usekestrel.ai/incident-response/kubernetes.md): AI-powered detection, root cause analysis, and remediation for Kubernetes incidents
+- [Cloud Incident Response](https://docs.usekestrel.ai/incident-response/cloud.md): AI-powered detection and remediation for AWS and OCI cloud incidents
+- [Cloud AI Copilot](https://docs.usekestrel.ai/copilot/overview.md): Investigate your infrastructure and applications with conversational AI
+- [Kubernetes Investigation](https://docs.usekestrel.ai/copilot/kubernetes.md): Query pods, deployments, events, logs, and metrics across your Kubernetes clusters
+- [Cloud Investigation](https://docs.usekestrel.ai/copilot/cloud.md): Query AWS and OCI resources, security configurations, CloudTrail events, and network traffic
+- [Code Investigation](https://docs.usekestrel.ai/copilot/code.md): Search, read, and analyze code across connected GitHub and GitLab repositories
+- [Cost Analysis](https://docs.usekestrel.ai/copilot/costs.md): Query AWS costs, identify spend patterns, and surface anomalies
+- [Configuration Changes](https://docs.usekestrel.ai/copilot/config-changes.md): Generate and apply YAML and Terraform changes through the copilot
+- [Kubernetes](https://docs.usekestrel.ai/integrations/kubernetes.md): Connect your Kubernetes clusters to Kestrel for real-time incident detection, traffic visibility, and AI-powered operations
+- [AWS](https://docs.usekestrel.ai/integrations/aws.md): Connect your AWS accounts to Kestrel for resource inventory, security monitoring, and VPC Flow Logs analysis
+- [OCI](https://docs.usekestrel.ai/integrations/oci.md): Connect your Oracle Cloud Infrastructure tenancies to Kestrel for resource inventory and security monitoring
+- [Cloudflare](https://docs.usekestrel.ai/integrations/cloudflare.md): Connect Cloudflare for DNS, WAF, cache, Workers, load balancer, and tunnel automation, plus security event and health check triggers in workflows
+- [Slack](https://docs.usekestrel.ai/integrations/slack.md): Connect Slack for real-time incident notifications, interactive Q&A, workflow triggers, and AI copilot commands
+- [GitHub](https://docs.usekestrel.ai/integrations/github.md): Connect GitHub for GitOps deployments, causal PR detection, and IaC remediation via pull requests
+- [GitLab](https://docs.usekestrel.ai/integrations/gitlab.md): Connect GitLab for GitOps deployments and IaC remediation via merge requests
+- [PagerDuty](https://docs.usekestrel.ai/integrations/pagerduty.md): Route Kestrel incidents to PagerDuty with full root cause analysis, severity mapping, and service routing
+- [Jira](https://docs.usekestrel.ai/integrations/jira.md): Connect Jira for ticket creation, status tracking, and incident knowledge during investigations
+- [Confluence](https://docs.usekestrel.ai/integrations/confluence.md): Connect Confluence for publishing runbooks, postmortems, and using wiki pages as incident knowledge
+- [Glean](https://docs.usekestrel.ai/integrations/glean.md): Connect Glean for enterprise-wide knowledge search during incident investigations
+- [Linear](https://docs.usekestrel.ai/integrations/linear.md): Connect Linear for issue creation, tracking, and historical context during incident investigations
+- [PostHog](https://docs.usekestrel.ai/integrations/posthog.md): Connect PostHog for product analytics triggers, session replay, and error investigation in workflows
+- [Vercel](https://docs.usekestrel.ai/integrations/vercel.md): Connect Vercel for deployment event triggers, build log access, and rollback actions in workflows
+- [Railway](https://docs.usekestrel.ai/integrations/railway.md): Connect Railway for deployment event triggers, log access, and rollback/redeploy actions in workflows
+- [Fly.io](https://docs.usekestrel.ai/integrations/flyio.md): Connect Fly.io for machine lifecycle triggers, secrets access, and machine actions in workflows
+- [Nebius](https://docs.usekestrel.ai/integrations/nebius.md): Connect Nebius AI Cloud for GPU/node lifecycle triggers, instance actions, and managed Kubernetes scaling in workflows
+- [Beam](https://docs.usekestrel.ai/integrations/beam.md): Connect Beam.cloud for serverless deployment, container/sandbox lifecycle, task monitoring, and AI investigation in workflows
+- [Daytona](https://docs.usekestrel.ai/integrations/daytona.md): Connect Daytona for sandbox, snapshot, and volume lifecycle, command execution, and AI investigation in workflows
+- [Supabase](https://docs.usekestrel.ai/integrations/supabase.md): Connect Supabase for project, branch, backup, and read-replica lifecycle, network restrictions, and AI investigation in workflows
+- [PlanetScale](https://docs.usekestrel.ai/integrations/planetscale.md): Connect PlanetScale for database branch, deploy-request (schema migration), backup, and credential automation in workflows
+- [Neon](https://docs.usekestrel.ai/integrations/neon.md): Connect Neon for serverless Postgres branch lifecycle, point-in-time restore, compute suspend/resume and autoscaling, reset-from-parent, credential rotation, and AI investigation in workflows
+- [ClickHouse](https://docs.usekestrel.ai/integrations/clickhouse.md): Connect ClickHouse Cloud for service lifecycle (start/stop/scale), IP access list, backups, ClickPipes ingestion, usage costs, error-spike detection, and AI investigation in workflows
+- [Databricks](https://docs.usekestrel.ai/integrations/databricks.md): Connect Databricks for data-platform automation — react to failed job runs, cluster terminations, and DLT pipeline failures, repair runs, manage clusters and SQL warehouses, and run data-quality checks in workflows
+- [Datadog](https://docs.usekestrel.ai/integrations/datadog.md): Query metrics, events, hosts, and logs from your in-cluster Datadog installation for incident investigation
+- [OpenTelemetry](https://docs.usekestrel.ai/integrations/opentelemetry.md): Receive and store OpenTelemetry metrics from your collectors for incident root cause analysis
+- [ArgoCD](https://docs.usekestrel.ai/integrations/argocd.md): Connect ArgoCD for GitOps sync actions, deployment tracking, and status monitoring in workflows
+- [Argo Rollouts](https://docs.usekestrel.ai/integrations/argo-rollouts.md): Connect Argo Rollouts for progressive delivery actions — promote, abort, retry, and roll back canary and blue-green rollouts in workflows
+- [Flux CD](https://docs.usekestrel.ai/integrations/fluxcd.md): Connect Flux CD for GitOps actions — reconcile, suspend, and resume Kustomizations, HelmReleases, and sources in workflows
+- [Karpenter](https://docs.usekestrel.ai/integrations/karpenter.md): Connect Karpenter for node autoscaling actions — scale NodePool limits, tune disruption settings, and recycle nodes in workflows
+- [Kyverno](https://docs.usekestrel.ai/integrations/kyverno.md): Connect Kyverno for policy-as-code automation — react to policy violations and admission blocks, audit compliance, and manage policy enforcement in workflows
+- [Trivy](https://docs.usekestrel.ai/integrations/trivy.md): Connect Trivy for cluster security scanning automation — react to new CVEs, exposed secrets, misconfigurations, and compliance failures, and query scan results in workflows
+- [Helm](https://docs.usekestrel.ai/integrations/helm.md): Install, upgrade, rollback, and manage Helm releases as part of automated workflows
+- [Terraform Cloud](https://docs.usekestrel.ai/integrations/terraform.md): Connect Terraform Cloud (HCP Terraform) for run lifecycle automation (plan/apply/discard/cancel), workspace locking, variables, state outputs, drift detection, and AI investigation in workflows
+- [Pulumi Cloud](https://docs.usekestrel.ai/integrations/pulumi.md): Connect Pulumi Cloud for stack update and deployment automation, drift detection and remediation, deployment queue control, stack tags, outputs, and AI investigation in workflows
+- [Jenkins](https://docs.usekestrel.ai/integrations/jenkins.md): Connect Jenkins for build triggering (with parameters), build monitoring, console log retrieval, stopping runaway builds, build-failure webhooks, and AI investigation in workflows
+- [CircleCI](https://docs.usekestrel.ai/integrations/circleci.md): Connect CircleCI for pipeline triggering, workflow rerun/cancel, on-hold job approval, test-result retrieval, failure webhooks, and AI investigation in workflows
+- [SonarCloud](https://docs.usekestrel.ai/integrations/sonarcloud.md): Connect SonarCloud for code quality automation — react to failed quality gates, triage vulnerabilities and hotspots, and track code health in workflows
+- [Okta](https://docs.usekestrel.ai/integrations/okta.md): Connect Okta for identity security automation — react to lockouts, MFA resets, and privileged group changes, and respond with suspensions, session revocation, and group changes in workflows
+- [HashiCorp Vault](https://docs.usekestrel.ai/integrations/vault.md): Connect HashiCorp Vault for secret rotation automation, seal-status monitoring, stale-secret detection, policy and auth-method change alerts, lease management, and AI investigation in workflows
+- [Infisical](https://docs.usekestrel.ai/integrations/infisical.md): Connect Infisical for secret change monitoring, approval-request and failed-sync alerts, machine-identity tracking, secret and folder management, and AI investigation in workflows
+- [Knowledge Sources](https://docs.usekestrel.ai/integrations/knowledge-sources.md): Connect your organization's knowledge sources to enhance incident investigations with historical context
+- [Security & Compliance](https://docs.usekestrel.ai/enterprise/security.md): Enterprise-grade security controls and data privacy
+- [On-Premise Overview](https://docs.usekestrel.ai/on-premise/overview.md): Deploy Kestrel in your own cloud environment with complete control and data sovereignty
+- [On-Premise Setup Guide](https://docs.usekestrel.ai/on-premise/setup.md): Step-by-step guide to deploying Kestrel in your own cloud environment
+
+## OpenAPI Specs
+
+- [openapi](https://docs.usekestrel.ai/api-reference/openapi.json)
+
+## Optional
+
+- [Blog](https://usekestrel.ai/blog)
+- [Changelog](https://usekestrel.ai/changelog)
