@@ -1,6 +1,9 @@
 aid: kestrel
 url: >-
   https://raw.githubusercontent.com/api-evangelist/kestrel/refs/heads/main/apis.yml
+x-docs-platform: mintlify
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
 apis:
   - aid: kestrel:platform
     name: Kestrel Platform
