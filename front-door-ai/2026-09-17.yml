@@ -1,0 +1,39 @@
+# Front Door AI Index — kestrel — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: kestrel
+  lexicon_version: '1.0'
+  probed_at: '2026-09-25'
+  host: usekestrel.ai
+  final_host: usekestrel.ai
+  ownership: own
+  owner: kestrel
+  shares_host_with: null
+  inherited_from: null
+  alias_of: null
+  verdict: scored
+  score: 43
+  band: 6
+  band_label: dominant
+  host_score: 43
+  density: 19.03
+  words: 2260
+  tiers:
+    agentic: 14
+    core: 25
+    model: 4
+  ambiguous: 17
+  top_terms:
+    AI: 24
+    agent: 13
+    AI agent: 7
+    MCP: 4
+    automation: 4
+    copilot: 2
+    Azure OpenAI: 1
+    Bedrock: 1
+    OpenAI: 1
+    Vertex AI: 1
+    generative ai: 1
+    inference: 1
